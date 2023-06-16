@@ -5,10 +5,52 @@
  */
 package paquete2;
 
+import paquete1.Persona;
+
 /**
  *
- * @author reroes
+ * @author Gabriel
  */
-public class Prestamo {
+public class Prestamo extends Persona{
+    private String beneficiario;
+    protected double meses;
+    protected String ciudad;
+
+    public Prestamo() {
+        beneficiario = "Gabo";
+        meses = 6;
+        ciudad = "Loja";
+    }
+    
+    public Prestamo(String beneficiario, double meses, String ciudad) {
+        this.beneficiario = beneficiario;
+        this.meses = meses;
+        this.ciudad = ciudad;
+    }
+
+    public String getBeneficiario() {
+        return beneficiario;
+    }
+
+    public void setBeneficiario(String beneficiario) {
+        this.beneficiario = beneficiario;
+    }
+
+    public double getMeses() {
+        return meses;
+    }
+
+    public void setMeses(double meses) {
+        this.meses = meses;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciud) {
+        this.ciudad = ciud;
+    }
+    
     
 }
